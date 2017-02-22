@@ -10,8 +10,8 @@ function initMap() {
 	});
 
 	var marker = new google.maps.Marker({
-    position: {lat: 34.867427, lng: -111.761907},
-    map: map,
-    title: 'Sedona Reserve'
-  });
+		position: {lat: 34.867427, lng: -111.761907},
+		map: map,
+		title: 'Sedona Reserve'
+	});
 }

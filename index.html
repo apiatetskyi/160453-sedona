@@ -19,26 +19,23 @@
 						<a class="main-nav__link" href="">Фото и видео</a>
 					</li>
 					<li class="main-nav__item">
-						<div class="logo  main-nav__logo">
-							<a>
-								<img src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
-							</a>
-						</div>
-					</li>
-					<li class="main-nav__item">
 						<a class="main-nav__link" href="">Карта штата</a>
 					</li>
 					<li class="main-nav__item">
-						<a class="main-nav__link" href="">Гостиницы</a>
+						<a class="main-nav__link" href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
-			
+			<div class="logo  main-nav__logo">
+				<a>
+					<img src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
+				</a>
+			</div>
 			<div class="main-header__promo">
 				<img class="main-header__slogan" src="img/promo-text.png" alt="Sedona Mountains" title="Добро пожаловать в безумно красивую Седону" width="458" height="352">
 			</div>
 		</header>
-		<main>
+		<main class="page__main">
 			<article class="reasons">
 				<header class="reasons__header">
 					<h1 class="reasons__headline">Cедона — небольшой городок в Aризоне, заслуживающий большего!</h1>
@@ -103,21 +100,18 @@
 			<section class="search">
 				<h2 class="search__title">Заинтересовались?</h2>
 				<p class="search__desc">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<a class="btn  btn_color_brown  search__btn" href="search.html">Поиск гостиницы в седоне</a>
-				<form action="" class="search__form">
-
+				<a class="btn  btn_brown  search__btn" href="search.html">Поиск гостиницы в седоне</a>
+				<form class="search__form" action="#" method="post">
 					<div class="textfield  textfield_date  search__textfield">
 						<label class="textfield__label" for="check-in">Дата заезда:</label>
 						<input class="textfield__input" id="check-in" type="text" name="check_in" value="24 апреля 2017">
 						<span class="textfield__icon  textfield__icon_calendar"></span>
 					</div>
-
 					<div class="textfield  textfield_date  search__textfield">
 						<label class="textfield__label" for="check-out">Дата выезда:</label>
 						<input class="textfield__input" id="check-out" type="text" name="check_out" value="4 июля 2017">
 						<span class="textfield__icon  textfield__icon_calendar"></span>
 					</div>
-
 					<div class="search__number">
 						<div class="number">
 							<label class="number__label" for="adults-number">Взрослые:</label>
@@ -136,8 +130,7 @@
 							</div>
 						</div>
 					</div>
-
-					<button class="btn  btn_color_light-blue  search__submit" type="submite">Найти</button>
+					<button class="btn  btn_light-blue  search__submit" type="submite">Найти</button>
 				</form>
 			</section>
 			<div class="map" id="google-map"></div>
@@ -145,9 +138,9 @@
 		<footer class="main-footer  page__footer">
 			<a class="main-footer__hashtag" href="http://visitsedona.com/">#visitsedona</a>
 			<div class="social  main-footer__social">
-				<a class="social__btn  social__btn_tw  btn  btn_color_light-blue" href="https://twitter.com/SedonaAZ">Twitter</a>
-				<a class="social__btn  social__btn_fb  btn  btn_color_light-blue" href="https://www.facebook.com/VisitSedona">Facebook</a>
-				<a class="social__btn  social__btn_youtube  btn  btn_color_light-blue" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
+				<a class="social__btn  social__btn_tw  btn  btn_light-blue" href="https://twitter.com/SedonaAZ">Twitter</a>
+				<a class="social__btn  social__btn_fb  btn  btn_light-blue" href="https://www.facebook.com/VisitSedona">Facebook</a>
+				<a class="social__btn  social__btn_youtube  btn  btn_light-blue" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
 			</div>
 			<div class="copyright  main-footer__copyright">
 				Website by
