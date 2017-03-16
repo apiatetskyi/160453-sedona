@@ -18,3 +18,13 @@ function initMap() {
     });
   }
 }
+
+var searchBtn = document.querySelector('.search__btn'),
+searchForm = document.querySelector('.search__form');
+
+if (searchBtn) {
+  searchBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    searchForm.classList.toggle('search__form_closed');
+  });
+}

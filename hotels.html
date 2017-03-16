@@ -1,190 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Седона</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
-	<div class="page__wrapper">
-		<header class="main-header">
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="">Информация</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="">Фото и видео</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="">Карта штата</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link  main-nav__link_active">Гостиницы</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="logo  main-nav__logo">
-				<a href="index.html">
-					<img src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
-				</a>
-			</div>
-		</header>
-		<main class="page__main">
-			<form class="filter" action="#" method="post">
-				<fieldset class="filter__group">
-					<legend class="filter__title">Инфраструктура:</legend>
-					<div class="checkbox  filter__checkbox">
-						<input class="checkbox__input" id="pool" type="checkbox" name="pool" checked>
-						<label class="checkbox__label" for="pool">Бассейн</label>
-					</div>
-					<div class="checkbox  filter__checkbox">
-						<input class="checkbox__input" id="parking" type="checkbox" name="parking">
-						<label class="checkbox__label" for="parking">Парковка</label>
-					</div>
-					<div class="checkbox  filter__checkbox">
-						<input class="checkbox__input" id="wi-fi" type="checkbox" name="wi-fi">
-						<label class="checkbox__label" for="wi-fi">WI-FI</label>
-					</div>
-				</fieldset>
-				<fieldset class="filter__group">
-					<legend class="filter__title">Тип жилья:</legend>
-					<div class="checkbox  filter__checkbox">
-						<input class="checkbox__input" id="hotel" type="checkbox" name="hotel" checked>
-						<label class="checkbox__label" for="hotel">Гостиница</label>
-					</div>
-					<div class="checkbox  filter__checkbox">
-						<input class="checkbox__input" id="motel" type="checkbox" name="motel" checked>
-						<label class="checkbox__label" for="motel">Мотель</label>
-					</div>
-					<div class="checkbox  filter__checkbox">
-						<input class="checkbox__input" id="apartments" type="checkbox" name="apartments" checked>
-						<label class="checkbox__label" for="apartments">Апартаменты</label>
-					</div>
-				</fieldset>
-				<fieldset class="filter__group  filter__group_cost">
-					<legend class="filter__title">Стоимость в сутки (Р):</legend>
-					<div class="price-filter  filter__price">
-						<div class="price-filter__values">
-							<div class="price-filter__value  price-filter__value_min">
-								<label for="min-price">от</label>
-								<input id="min-price" type="text" name="min-price" value="0">
-							</div>
-							<div class="price-filter__value  price-filter__value_max">
-								<label for="max-price">до</label>
-								<input id="max-price" type="text" name="max-price" value="3000">
-							</div>
-						</div>
-						<div class="range  filter__range">
-							<div class="range__bar">
-								<span class="range__marker  range__marker_min"></span>
-								<span class="range__marker  range__marker_max"></span>
-							</div>
-						</div>
-					</div>
-					<button class="filter__submit" type="button">Показать</button>
-				</fieldset>
-			</form>
-			<section class="search-result">
-				<div class="search-result__row">
-					<div class="search-result__inner">
-						<div class="search-result__title">Найдено:<span>3</span></div>
-						<ul class="sort  search-result__sort">
-							<div class="sort__title">Сортировка:</div>
-							<li class="sort__item">
-								<a class="sort__type  sort__type_active" href="">По цене</a>
-							</li>
-							<li class="sort__item">
-								<a class="sort__type" href="">По типу</a>
-							</li>
-							<li class="sort__item">
-								<a class="sort__type" href="">по рейтингу</a>
-							</li>
-							<li class="sort__item">
-								<a href="" class="search-result__icon  search-result__icon_descending">По убыванию</a>
-								<a href="" class="search-result__icon  search-result__icon_active  search-result__icon_ascending">По возростанию</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="search-result__row">
-					<div class="search-result__inner">
-						<section class="hotel">
-							<div class="hotel__img">
-								<img src="img/amarta.jpg" alt="" title="" width="135" height="90">
-							</div>
-							<div class="hotel__info">
-								<h2 class="hotel__name">Amara Resort &amp; Spa</h2>
-								<span class="hotel__type">Гостиница</span>
-								<span class="hotel__price">ОТ 4000 Р.</span>
-								<div class="hotel__book">
-									<a class="hotel__btn  btn btn_light-blue btn_small" href="#">Подробнее</a>
-									<a class="hotel__btn  btn btn_brown btn_small" href="#">Забронировать</a>
-								</div>
-								<span class="hotel__stars  hotel__stars_4"></span>
-								<span class="hotel__rating">Рейтинг: 8.5</span>
-							</div>
-						</section>
-					</div>
-				</div>
-				<div class="search-result__row">
-					<div class="search-result__inner">
-						<section class="hotel">
-							<div class="hotel__img">
-								<img src="img/desert.jpg" alt="" title="" width="135" height="90">
-							</div>
-							<div class="hotel__info">
-								<h2 class="hotel__name">Desert Quail Inn</h2>
-								<span class="hotel__type">Мотель</span>
-								<span class="hotel__price">ОТ 3000 Р.</span>
-								<div class="hotel__book">
-									<a class="hotel__btn  btn btn_light-blue btn_small" href="#">Подробнее</a>
-									<a class="hotel__btn  btn btn_brown btn_small" href="#">Забронировать</a>
-								</div>
-								<span class="hotel__stars  hotel__stars_4"></span>
-								<span class="hotel__rating">Рейтинг: 8.5</span>
-							</div>
-						</section>
-					</div>
-				</div>
-				<div class="search-result__row">
-					<div class="search-result__inner">
-						<section class="hotel">
-							<div class="hotel__img">
-								<img src="img/villas.jpg" alt="" title="" width="135" height="90">
-							</div>
-							<div class="hotel__info">
-								<h2 class="hotel__name">Villas at Poco Diablo</h2>
-								<span class="hotel__type">Апартаменты</span>
-								<span class="hotel__price">ОТ 2000 Р.</span>
-								<div class="hotel__book">
-									<a class="hotel__btn  btn btn_light-blue btn_small" href="#">Подробнее</a>
-									<a class="hotel__btn  btn btn_brown btn_small" href="#">Забронировать</a>
-								</div>
-								<span class="hotel__stars  hotel__stars_4"></span>
-								<span class="hotel__rating">Рейтинг: 8.5</span>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="main-footer">
-			<a class="main-footer__hashtag" href="http://visitsedona.com/">#visitsedona</a>
-			<div class="social  main-footer__social">
-				<a class="social__btn  social__btn_tw  btn  btn_light-blue" href="https://twitter.com/SedonaAZ">Twitter</a>
-				<a class="social__btn  social__btn_fb  btn  btn_light-blue" href="https://www.facebook.com/VisitSedona">Facebook</a>
-				<a class="social__btn  social__btn_youtube  btn  btn_light-blue" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
-			</div>
-			<div class="copyright  main-footer__copyright">
-				Website by
-				<a class="copyright__link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
-			</div>
-		</footer>
-	</div>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&amp;callback=initMap" async defer></script>
-	<script src="js/app.js"></script>
+  <div class="page__wrapper">
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Информация</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Карта штата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link_active">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo  main-nav__logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" title="Логотип города Седона" width="138" height="70">
+        </a>
+      </div>
+    </header>
+    <main class="page__main">
+      <form class="filter" action="#" method="post">
+        <fieldset class="filter__group">
+          <legend class="filter__title">Инфраструктура:</legend>
+          <div class="checkbox  filter__checkbox">
+            <input class="checkbox__input" id="pool" type="checkbox" name="pool" checked>
+            <label class="checkbox__label" for="pool">Бассейн</label>
+          </div>
+          <div class="checkbox  filter__checkbox">
+            <input class="checkbox__input" id="parking" type="checkbox" name="parking">
+            <label class="checkbox__label" for="parking">Парковка</label>
+          </div>
+          <div class="checkbox  filter__checkbox">
+            <input class="checkbox__input" id="wi-fi" type="checkbox" name="wi-fi">
+            <label class="checkbox__label" for="wi-fi">WI-FI</label>
+          </div>
+        </fieldset>
+        <fieldset class="filter__group">
+          <legend class="filter__title">Тип жилья:</legend>
+          <div class="checkbox  filter__checkbox">
+            <input class="checkbox__input" id="hotel" type="checkbox" name="hotel" checked>
+            <label class="checkbox__label" for="hotel">Гостиница</label>
+          </div>
+          <div class="checkbox  filter__checkbox">
+            <input class="checkbox__input" id="motel" type="checkbox" name="motel" checked>
+            <label class="checkbox__label" for="motel">Мотель</label>
+          </div>
+          <div class="checkbox  filter__checkbox">
+            <input class="checkbox__input" id="apartments" type="checkbox" name="apartments" checked>
+            <label class="checkbox__label" for="apartments">Апартаменты</label>
+          </div>
+        </fieldset>
+        <fieldset class="filter__group  filter__group_cost">
+          <legend class="filter__title">Стоимость в сутки (Р):</legend>
+          <div class="price-filter  filter__price">
+            <div class="price-filter__values">
+              <div class="price-filter__value  price-filter__value_min">
+                <label for="min-price">от</label>
+                <input id="min-price" type="text" name="min-price" value="0">
+              </div>
+              <div class="price-filter__value  price-filter__value_max">
+                <label for="max-price">до</label>
+                <input id="max-price" type="text" name="max-price" value="3000">
+              </div>
+            </div>
+            <div class="range  filter__range">
+              <div class="range__bar">
+                <span class="range__marker  range__marker_min"></span>
+                <span class="range__marker  range__marker_max"></span>
+              </div>
+            </div>
+          </div>
+          <button class="filter__submit" type="button">Показать</button>
+        </fieldset>
+      </form>
+      <section class="search-result">
+        <div class="search-result__row">
+          <div class="search-result__inner">
+            <div class="search-result__title">Найдено:<span>3</span></div>
+            <ul class="sort  search-result__sort">
+              <li class="sort__title">Сортировка:</li>
+              <li class="sort__item">
+                <a class="sort__type  sort__type_active" href="#">По цене</a>
+              </li>
+              <li class="sort__item">
+                <a class="sort__type" href="#">По типу</a>
+              </li>
+              <li class="sort__item">
+                <a class="sort__type" href="#">по рейтингу</a>
+              </li>
+              <li class="sort__item">
+                <a href="#" class="search-result__icon  search-result__icon_descending">По убыванию</a>
+                <a href="#" class="search-result__icon  search-result__icon_active  search-result__icon_ascending">По возростанию</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-result__row">
+          <div class="search-result__inner">
+            <section class="hotel">
+              <div class="hotel__img">
+                <img src="img/amarta.jpg" alt="" title="" width="135" height="90">
+              </div>
+              <div class="hotel__info">
+                <a class="hotel__name" href="#">Amara Resort &amp; Spa</a>
+                <span class="hotel__type">Гостиница</span>
+                <span class="hotel__price">ОТ 4000 Р.</span>
+                <div class="hotel__book">
+                  <a class="hotel__btn  btn btn_light-blue btn_small" href="#">Подробнее</a>
+                  <a class="hotel__btn  btn btn_brown btn_small" href="#">Забронировать</a>
+                </div>
+                <span class="hotel__stars  hotel__stars_4"></span>
+                <span class="hotel__rating">Рейтинг: 8.5</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="search-result__row">
+          <div class="search-result__inner">
+            <section class="hotel">
+              <div class="hotel__img">
+                <img src="img/desert.jpg" alt="" title="" width="135" height="90">
+              </div>
+              <div class="hotel__info">
+                <a class="hotel__name" href="#">Desert Quail Inn</a>
+                <span class="hotel__type">Мотель</span>
+                <span class="hotel__price">ОТ 3000 Р.</span>
+                <div class="hotel__book">
+                  <a class="hotel__btn  btn btn_light-blue btn_small" href="#">Подробнее</a>
+                  <a class="hotel__btn  btn btn_brown btn_small" href="#">Забронировать</a>
+                </div>
+                <span class="hotel__stars  hotel__stars_3"></span>
+                <span class="hotel__rating">Рейтинг: 8.5</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="search-result__row">
+          <div class="search-result__inner">
+            <section class="hotel">
+              <div class="hotel__img">
+                <img src="img/villas.jpg" alt="" title="" width="135" height="90">
+              </div>
+              <div class="hotel__info">
+                <a class="hotel__name" href="#">Villas at Poco Diablo</a>
+                <span class="hotel__type">Апартаменты</span>
+                <span class="hotel__price">ОТ 2000 Р.</span>
+                <div class="hotel__book">
+                  <a class="hotel__btn  btn btn_light-blue btn_small" href="#">Подробнее</a>
+                  <a class="hotel__btn  btn btn_brown btn_small" href="#">Забронировать</a>
+                </div>
+                <span class="hotel__stars  hotel__stars_2"></span>
+                <span class="hotel__rating">Рейтинг: 8.5</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__hashtag" href="http://visitsedona.com/">#visitsedona</a>
+      <div class="social  main-footer__social">
+        <a class="social__btn  social__btn_tw  btn  btn_light-blue" href="https://twitter.com/SedonaAZ">Twitter</a>
+        <a class="social__btn  social__btn_fb  btn  btn_light-blue" href="https://www.facebook.com/VisitSedona">Facebook</a>
+        <a class="social__btn  social__btn_youtube  btn  btn_light-blue" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
+      </div>
+      <div class="copyright  main-footer__copyright">
+        Website by
+        <a class="copyright__link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&amp;callback=initMap" async defer></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
